@@ -24,7 +24,7 @@ const initialState = {
   'data/fetchFundraisingProfile',
   async (id) => {
     const response = await Axios.get(
-      `http://localhost:4000/user/raisingFundProfile/${id}`
+      `https://arogya-backend-pjtu.onrender.com/user/raisingFundProfile/${id}`
     );
     return response.data.data;
   }
@@ -33,7 +33,7 @@ const initialState = {
   'getraisingFund/all',
   async () => {
 
-    const response = await Axios.get(`http://localhost:4000/user/getraisingFund/all`);
+    const response = await Axios.get(`https://arogya-backend-pjtu.onrender.com/user/getraisingFund/all`);
     return response.data.data;
   }
 );

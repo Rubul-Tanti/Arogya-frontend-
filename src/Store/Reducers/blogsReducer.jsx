@@ -16,11 +16,11 @@ const initialState={
 }
 
  export const FetchallBlogs=createAsyncThunk("/blogs",async()=>{
-      const response = await Axios.get(`http://localhost:4000/user/blogs/yoga`);
+      const response = await Axios.get(`https://arogya-backend-pjtu.onrender.com/user/blogs/yoga`);
     return response.data.data;
   })
  export const FetchBlog=createAsyncThunk("/blog",async(id)=>{
-      const response = await Axios.get(`http://localhost:4000/user/getblog/${id}`);
+      const response = await Axios.get(`https://arogya-backend-pjtu.onrender.com/user/getblog/${id}`);
     return response.data.data;
   })
 
